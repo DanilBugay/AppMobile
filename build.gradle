@@ -1,0 +1,64 @@
+
+buildscript {
+  repositories {
+    jcenter()
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:2.3.3'
+  
+  }
+}
+
+repositories {
+	mavenCentral()
+	jcenter()
+	maven {
+		url "https://maven.google.com"
+	}
+}
+
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion '26.0.2'
+
+  defaultConfig {
+    applicationId "com.examples.testproject.login"
+    minSdkVersion 22
+    targetSdkVersion 22
+    versionCode 1
+    versionName "1.0"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+    }
+  }
+
+  lintOptions {
+    disable 'InvalidPackage', 'RtlCompat'
+    abortOnError false
+  }
+
+  defaultConfig {
+    multiDexEnabled true
+   }
+
+  dexOptions {
+    javaMaxHeapSize "3g" //specify the heap size for the dex process
+  }
+}
+
+dependencies {
+  compile fileTree( include: ['*.jar'], dir: 'libs' )
+  compile group: 'com.backendless', name: 'backendless', version: '4.4.0'
+
+  compile "com.android.support:support-compat:25.3.1"
+  compile "com.android.support:support-core-utils:25.3.1"
+  compile "com.android.support:support-fragment:25.3.1"
+
+  
+}

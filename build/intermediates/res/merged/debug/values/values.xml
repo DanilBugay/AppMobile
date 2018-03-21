@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="pink">#FF7F50</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="ageField">Age</string>
+    <string name="app_name">The best pony app</string>
+    <string name="backendless_ApiHost">https://api.backendless.com</string>
+    <string name="backendless_ApiKey">6AB72D5A-1638-40F2-FF36-2D99FFD85B00</string>
+    <string name="backendless_AppId">B7497049-4B47-2C59-FFDF-8B1B714E2C00</string>
+    <string name="btn_LoginBackendless">Log in</string>
+    <string name="btn_LoginFacebook">Login in Facebook</string>
+    <string name="btn_LoginGooglePlus">Login in GooglePlus</string>
+    <string name="btn_LoginTwitter">Login in Twitter</string>
+    <string name="btn_LogoutBackendless">Logout</string>
+    <string name="countryField">Country</string>
+    <string name="created_field_prompt">Created:</string>
+    <string name="editText_BackendlessUserInfo">You should login as Backendless user first.</string>
+    <string name="email_field_prompt">Email:</string>
+    <string name="facebook_app_id"/>
+    <string name="fb_login_protocol_scheme">fb...</string>
+    <string name="file_field_prompt">File:</string>
+    <string name="genderFemale">Female</string>
+    <string name="genderField">Gender</string>
+    <string name="genderMale">Male</string>
+    <string name="gp_WebApp_ClientId"/>
+    <string name="gp_WebApp_ClientSecret"/>
+    <string name="hello_button">Let\'s start</string>
+    <string name="login_prompt">Login:</string>
+    <string name="name_field_prompt">Name:</string>
+    <string name="objectId_field_prompt">ObjectId:</string>
+    <string name="ownerId_field_prompt">OwnerId:</string>
+    <string name="password_field_prompt">Password:</string>
+    <string name="password_prompt">Password:</string>
+    <string name="password_recovered_message">We sent an email to your email address with a link to a password change page. Please check your email and follow the link for further instructions.</string>
+    <string name="password_recovery_page_name">Password Recovery</string>
+    <string name="reg_title">Register your pony</string>
+    <string name="register_text">Register</string>
+    <string name="registration_error">Registration error!</string>
+    <string name="registration_page_name">Registration</string>
+    <string name="registration_success">Registered successfully!</string>
+    <string name="registration_success_message">Thank you for registering with the %1$s.</string>
+    <string name="remember_login_text">Remember me</string>
+    <string name="restore_link">Restore</string>
+    <string name="restore_password_page_name">Password Restoration</string>
+    <string name="textView_BackendlessUserInfo">Backendless User info.</string>
+    <string name="updated_field_prompt">Updated:</string>
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+		
+	</style>
+</resources>

@@ -1,0 +1,22 @@
+#Wed Mar 14 00:52:54 EET 2018
+renamed.6=classes7.dex
+renamed.5=classes3.dex
+renamed.4=classes.dex
+renamed.3=classes2.dex
+renamed.2=classes6.dex
+renamed.1=classes4.dex
+renamed.0=classes5.dex
+base.6=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_7b2ec427c56ad537823972a4b4020a1a3bda7799
+base.5=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_790018ed56ff43ad05854205a35c0ddbcf4e0cc4
+base.4=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\backendless-4.4.0_d370d15e1ad0a757f0b860c493a57a3a2b53b1eb
+base.3=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6133c36dd3caca6df9a94d6f7f6d060121f35730
+base.2=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_daa000c54843fd7bee950f7cfa3e01d5f3826306
+base.1=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_a6ac17e74920a7ddc4698d7e1dc70192d814e678
+base.0=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_cfca3518bf04dcf62dbc17c3897ecd88b2a9d682
+file.6=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_7b2ec427c56ad537823972a4b4020a1a3bda7799\\classes.dex
+file.5=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_790018ed56ff43ad05854205a35c0ddbcf4e0cc4\\classes.dex
+file.4=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\backendless-4.4.0_d370d15e1ad0a757f0b860c493a57a3a2b53b1eb\\classes.dex
+file.3=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6133c36dd3caca6df9a94d6f7f6d060121f35730\\classes.dex
+file.2=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_daa000c54843fd7bee950f7cfa3e01d5f3826306\\classes.dex
+file.1=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_a6ac17e74920a7ddc4698d7e1dc70192d814e678\\classes.dex
+file.0=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_cfca3518bf04dcf62dbc17c3897ecd88b2a9d682\\classes.dex

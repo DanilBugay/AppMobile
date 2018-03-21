@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\TestProject-Login\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_login.xml",
+        "source": "D:\\TestProject-Login\\src\\main\\res\\layout\\activity_main_login.xml"
+    },
+    {
+        "merged": "D:\\TestProject-Login\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login_result.xml",
+        "source": "D:\\TestProject-Login\\src\\main\\res\\layout\\activity_login_result.xml"
+    },
+    {
+        "merged": "D:\\TestProject-Login\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hello.xml",
+        "source": "D:\\TestProject-Login\\src\\main\\res\\layout\\activity_hello.xml"
+    },
+    {
+        "merged": "D:\\TestProject-Login\\build\\intermediates\\res\\merged\\debug\\layout\\activity_restore_password.xml",
+        "source": "D:\\TestProject-Login\\src\\main\\res\\layout\\activity_restore_password.xml"
+    },
+    {
+        "merged": "D:\\TestProject-Login\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "D:\\TestProject-Login\\src\\main\\res\\layout\\activity_register.xml"
+    }
+]
