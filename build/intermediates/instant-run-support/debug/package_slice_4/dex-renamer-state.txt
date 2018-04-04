@@ -1,4 +1,4 @@
-#Wed Mar 21 22:04:02 EET 2018
-base.0=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
+#Wed Apr 04 22:25:28 EEST 2018
+base.0=D\:\\anhelinaStrelina-Login\\build\\intermediates\\transforms\\dexMerger\\debug\\23
+path.0=classes.dex
 renamed.0=classes.dex
-file.0=D\:\\TestProject-Login\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4\\classes.dex

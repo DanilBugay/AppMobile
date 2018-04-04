@@ -10,73 +10,88 @@ import android.support.v4.content.res.ResourcesCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 import com.backendless.Backendless;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.examples.testproject.file.MainActivity;
 
 public class LoginResult extends Activity {
-	static final String userInfo_key = "BackendlessUserInfo";
-	static final String logoutButtonState_key = "LogoutButtonState";
+    static final String userInfo_key = "BackendlessUserInfo";
+    static final String logoutButtonState_key = "LogoutButtonState";
 
-	private EditText backendlessUserInfo;
-	private Button bkndlsLogoutButton;
+    private EditText backendlessUserInfo;
+    private Button bkndlsLogoutButton;
+    private Button bkndlsMakePhoto;
 
-	private String userInfo;
+    private String userInfo;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_login_result);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login_result);
 
-		initUI();
-		initUIBehaviour();
+        initUI();
+        initUIBehaviour();
 
-		Intent intent = getIntent();
-		String message = intent.getStringExtra(userInfo_key);
-		message = message == null ? "" : message;
-		boolean logoutButtonState = intent.getBooleanExtra(logoutButtonState_key, true);
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(userInfo_key);
+        message = message == null ? "" : message;
+        boolean logoutButtonState = intent.getBooleanExtra(logoutButtonState_key, true);
 
-		if (logoutButtonState) {
-			bkndlsLogoutButton.setVisibility(View.VISIBLE);
-			backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.black, null));
-		}
-		else {
-			bkndlsLogoutButton.setVisibility(View.INVISIBLE);
-			backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.holo_red_dark, null));
-		}
-		backendlessUserInfo.setText(message);
-	}
+        if (logoutButtonState) {
+            bkndlsLogoutButton.setVisibility(View.VISIBLE);
+            bkndlsMakePhoto.setVisibility(View.VISIBLE);
+            backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.black, null));
+        } else {
+            bkndlsLogoutButton.setVisibility(View.INVISIBLE);
+            bkndlsMakePhoto.setVisibility(View.INVISIBLE);
+            backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.holo_red_dark, null));
+        }
+        backendlessUserInfo.setText(message);
+    }
 
-	private void initUI() {
-		backendlessUserInfo = (EditText) findViewById(R.id.editText_bkndlsBackendlessUserInfo);
-		bkndlsLogoutButton = (Button) findViewById(R.id.button_bkndlsBackendlessLogout);
-	}
+    private void initUI() {
+        backendlessUserInfo = (EditText) findViewById(R.id.editText_bkndlsBackendlessUserInfo);
+        bkndlsLogoutButton = (Button) findViewById(R.id.button_bkndlsBackendlessLogout);
+        bkndlsMakePhoto = (Button) findViewById(R.id.button_bkndlsBackendlessMakePhoto);
+    }
 
-	private void initUIBehaviour() {
-		bkndlsLogoutButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-					logoutFromBackendless();
-			}
-		});
-	}
+    private void initUIBehaviour() {
+        bkndlsLogoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logoutFromBackendless();
+            }
+        });
+        bkndlsMakePhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tryMakePhoto();
+            }
+        });
+    }
 
-	private void logoutFromBackendless(){
-		Backendless.UserService.logout(new AsyncCallback<Void>() {
-			@Override
-			public void handleResponse(Void response) {
-				backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.black, null));
-				backendlessUserInfo.setText("");
-				bkndlsLogoutButton.setVisibility(View.INVISIBLE);
-				finish();
-			}
+    private void logoutFromBackendless() {
+        Backendless.UserService.logout(new AsyncCallback<Void>() {
+            @Override
+            public void handleResponse(Void response) {
+                backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.black, null));
+                backendlessUserInfo.setText("");
+                bkndlsLogoutButton.setVisibility(View.INVISIBLE);
+                finish();
+            }
 
-			@Override
-			public void handleFault(BackendlessFault fault) {
-				backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.holo_red_dark, null));
-				backendlessUserInfo.setText(fault.toString());
-			}
-		});
-	}
+            @Override
+            public void handleFault(BackendlessFault fault) {
+                backendlessUserInfo.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.holo_red_dark, null));
+                backendlessUserInfo.setText(fault.toString());
+            }
+        });
+    }
+
+    private void tryMakePhoto() {
+        startActivity(new Intent(this, MainActivity.class));
+    }
 }
 

@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">The best pony app</string>
+    <string name="service_name">Backendless Files</string>
+    <string name="welcome_text">This example demonstrates file (image) upload and sharing.</string>
+    <string name="uploaded_text">The image has been uploaded. The file is available at the following URL:</string>
+    <string name="takeNewPhoto">Take a photo</string>
+    <string name="takeAnotherPhoto">Take another photo</string>
+
+    <string name="app_name">The best mops app</string>
     <string name="btn_LoginBackendless">Log in</string>
     <string name="btn_LogoutBackendless">Logout</string>
+    <string name="btn_MakePhoto">File work</string>
     <string name="btn_LoginFacebook">Login in Facebook</string>
     <string name="btn_LoginGooglePlus">Login in GooglePlus</string>
     <string name="btn_LoginTwitter">Login in Twitter</string>
@@ -18,7 +25,7 @@
     <string name="password_recovery_page_name">Password Recovery</string>
     <string name="remember_login_text">Remember me</string>
 
-    <string name="reg_title">Register your pony</string>
+    <string name="reg_title">Register your mops</string>
     <string name="ageField">Age</string>
     <string name="genderField">Gender</string>
     <string name="genderMale">Male</string>

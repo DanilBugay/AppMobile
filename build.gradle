@@ -1,33 +1,37 @@
 
 buildscript {
   repositories {
+    mavenLocal()
+    mavenCentral()
     jcenter()
+    google()
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:2.3.3'
+    classpath 'com.android.tools.build:gradle:3.0.1'
   
+    // NOTE: Do not place your application dependencies here;
+    // they belong in the individual module build.gradle files;
   }
-}
-
-repositories {
-	mavenCentral()
-	jcenter()
-	maven {
-		url "https://maven.google.com"
-	}
 }
 
 apply plugin: 'com.android.application'
 
+repositories {
+  mavenLocal()
+  mavenCentral()
+  jcenter()
+  google()
+}
+
 android {
-  compileSdkVersion 25
-  buildToolsVersion '26.0.2'
+  compileSdkVersion 26
+  buildToolsVersion "27.0.3"
 
   defaultConfig {
-    applicationId "com.examples.testproject.login"
-    minSdkVersion 22
-    targetSdkVersion 22
+    applicationId "com.examples.anhelinastrelina.login"
+    minSdkVersion 21
+    targetSdkVersion 26
     versionCode 1
     versionName "1.0"
   }
@@ -53,12 +57,13 @@ android {
 }
 
 dependencies {
-  compile fileTree( include: ['*.jar'], dir: 'libs' )
-  compile group: 'com.backendless', name: 'backendless', version: '4.4.0'
+  implementation fileTree( include: ['*.jar'], dir: 'libs' )
+  implementation group: 'com.backendless', name: 'backendless', version: '4.4.0'
 
-  compile "com.android.support:support-compat:25.3.1"
-  compile "com.android.support:support-core-utils:25.3.1"
-  compile "com.android.support:support-fragment:25.3.1"
+  implementation 'com.android.support:appcompat-v7:26.1.0'
+  implementation 'com.android.support:support-compat:26.1.0'
+  implementation "com.android.support:support-fragment:26.1.0"
+  implementation "com.android.support:support-core-utils:26.1.0"
 
   
 }

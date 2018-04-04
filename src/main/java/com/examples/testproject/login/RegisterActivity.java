@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,11 @@ import android.widget.Toast;
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
+import com.backendless.async.callback.BackendlessCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.files.BackendlessFile;
+
+import java.io.File;
 
 public class RegisterActivity extends Activity {
     private final static java.text.SimpleDateFormat SIMPLE_DATE_FORMAT = new java.text.SimpleDateFormat("yyyy/MM/dd");
@@ -43,6 +48,7 @@ public class RegisterActivity extends Activity {
 
     private BackendlessUser user;
 
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
@@ -64,12 +70,16 @@ public class RegisterActivity extends Activity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onRegisterButtonClicked();
+                try {
+                    onRegisterButtonClicked();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
 
-    private void onRegisterButtonClicked() {
+    private void onRegisterButtonClicked() throws Exception {
         String nameText = nameField.getText().toString().trim();
         String emailText = emailField.getText().toString().trim();
         String passwordText = passwordField.getText().toString().trim();
@@ -112,7 +122,7 @@ public class RegisterActivity extends Activity {
         } else
             gender = "Female";
 
-        BackendlessUser user = new BackendlessUser();
+        final BackendlessUser user = new BackendlessUser();
 
         if (email != null) {
             user.setEmail(email);
@@ -163,6 +173,19 @@ public class RegisterActivity extends Activity {
                 dialog.show();
             }
         });
+        byte[] bytes = "TestMess".getBytes();
+        String uLogin = (String) user.getProperty("login");
+        String fPath = uLogin + "//shared with me";
+        Backendless.Files.saveFile(fPath, "test.txt", bytes, true, new AsyncCallback<String>() {
+            @Override
+            public void handleResponse(String response) {
+            }
+
+            @Override
+            public void handleFault(BackendlessFault fault) {
+            }
+        });
+
     }
 
     private void letsgo() {

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.examples.testproject.login.test">
+    package="com.examples.anhelinastrelina.login.test">
 
-    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="22" />
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.examples.testproject.login"
+                     android:targetPackage="com.examples.anhelinastrelina.login"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.examples.testproject.login"/>
+                     android:label="Tests for com.examples.anhelinastrelina.login"/>
 </manifest>

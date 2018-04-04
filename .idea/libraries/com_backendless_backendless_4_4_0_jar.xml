@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/4.4.0/242533fb57b4f0432e23a6b5ba8c7b91a8317661/backendless-4.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/4.4.0/e2b047fa9a5d9e8141a643e42413ea6f8556dee8/backendless-4.4.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
