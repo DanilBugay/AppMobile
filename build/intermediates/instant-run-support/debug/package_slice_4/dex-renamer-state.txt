@@ -1,4 +1,4 @@
-#Wed Apr 04 22:25:28 EEST 2018
-base.0=D\:\\anhelinaStrelina-Login\\build\\intermediates\\transforms\\dexMerger\\debug\\23
+#Thu Apr 05 12:18:09 EEST 2018
+base.0=C\:\\anhelinaStrelina-Login\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex
